@@ -1,15 +1,12 @@
 from time import time
 
-# var5
 start_time = time()
-a, b = 0, 3
+a, b = -2, 2
 alpha, betta = 0.618, 0.382
 epsilon = 0.001
 
-
 def f(x):
     return 20 * (x - 1) ** 2 + 95
-
 
 inc = b - a
 while (inc >= epsilon):

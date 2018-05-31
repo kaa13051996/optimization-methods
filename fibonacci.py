@@ -1,15 +1,12 @@
 from math import sqrt
 from time import time
 
-# var5
 start_time = time()
-a, b = 0, 3
+a, b = -2, 2
 epsilon = 0.001
-
 
 def generate_fibonacci(n):
     return (((1 + sqrt(5)) / 2) ** n - ((1 - sqrt(5)) / 2) ** n) / sqrt(5)
-
 
 def search_n(a, b, epsilon):
     num = (b - a) / epsilon
@@ -18,10 +15,8 @@ def search_n(a, b, epsilon):
         n += 1
     return n - 2
 
-
 def f(x):
     return 20 * (x - 1) ** 2 + 95
-
 
 n = search_n(0, 3, 0.001)
 print('Количество итераций: {0}'.format(n))

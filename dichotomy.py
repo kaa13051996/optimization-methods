@@ -2,17 +2,14 @@
 from math import fabs
 from time import time
 
-# var5
 start_time = time()
-a, b = 0, 3
+a, b = -2, 2
 epsilon = 0.001
 # delta = uniform(0, epsilon)
 delta = 7.110642666101863e-05
 
-
 def f(x):
     return 20 * (x - 1) ** 2 + 95
-
 
 while (fabs(b - a) >= epsilon):
     x_1 = (a + b) / 2 - delta
